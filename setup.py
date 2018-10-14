@@ -77,7 +77,7 @@ class NPM(Command):
 
     def has_npm(self):
         try:
-            check_call(['npm', '--version'])
+            check_call(['npm.cmd', '--version'])
             return True
         except:
             return False
